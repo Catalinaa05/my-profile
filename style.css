@@ -1,0 +1,233 @@
+/* GENERAL DESIGN */
+
+body {
+  background-color: lightgoldenrodyellow;
+  color: #333333;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* HEADINGS */
+
+h1, h2, h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.3;
+}
+
+h1 {
+  color: #a94442;
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #52796f;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #52796f;
+  font-size: 20px;
+}
+
+
+/* LINKS */
+
+a {
+  color: #a94442;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #52796f;
+  text-decoration: underline;
+}
+
+
+/* CONTAINER */
+
+.container {
+  width: 800px;
+  max-width: 90%;
+  margin: 40px auto;
+}
+
+
+/* REUSABLE CARDS */
+
+.card-white {
+  background-color: white;
+  padding: 35px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-white:hover {
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Added after card-white to override its background */
+.card-green {
+  background-color: #edf3ee;
+}
+
+
+/* REUSABLE TEXT STYLES */
+
+.text-center {
+  text-align: center;
+}
+
+.text-label {
+  color: #52796f;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.text-location {
+  color: #52796f;
+  font-size: 14px;
+}
+
+
+/* PROFILE PICTURE */
+
+#profile-picture {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.img-bordered {
+  border: 3px solid lightcoral;
+}
+
+
+/* INTRODUCTION SPACING */
+
+#introduction {
+  border-top: 4px solid lightcoral;
+}
+
+#bio {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+/* BUTTON */
+
+.btn-green {
+  display: inline-block;
+  background-color: #52796f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-green:hover {
+  background-color: #3b5c53;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* HORIZONTAL SOCIAL LINKS */
+
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 25px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0px 15px;
+}
+
+.list-inline a {
+  font-weight: bold;
+}
+
+
+/* RESPONSIVE DESIGN */
+/* Keep these rules at the end, from largest to smallest */
+
+/* Screens up to 960px wide */
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+/* Screens up to 720px wide */
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+
+  .card-white {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+/* Screens up to 540px wide */
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .card-white {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  #profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+
+  .list-inline > li {
+    display: inline-block;
+    padding: 5px;
+  }
+}
