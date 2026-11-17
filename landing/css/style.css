@@ -1,4 +1,4 @@
-/* Course UI kit: one stylesheet per reusable component. */
+/* Base styles */
 @import url("components/container.css");
 @import url("components/banner.css");
 @import url("components/button.css");
@@ -7,7 +7,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: #fafad2; color: #303b37; font-family: Georgia, serif; font-size: 18px; line-height: 1.6; }
+body { margin: 0; background: #f7f3e9; color: #303b37; font-family: Georgia, serif; font-size: 18px; line-height: 1.6; }
 h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; line-height: 1.2; }
 h2 { font-size: 30px; color: #35594f; }
 a { color: #35594f; text-decoration: none; }
