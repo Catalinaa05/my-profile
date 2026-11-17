@@ -1,0 +1,24 @@
+/* Course UI kit: one stylesheet per reusable component. */
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card.css");
+@import url("components/form.css");
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fafad2; color: #303b37; font-family: Georgia, serif; font-size: 18px; line-height: 1.6; }
+h1, h2, h3 { font-family: Arial, Helvetica, sans-serif; line-height: 1.2; }
+h2 { font-size: 30px; color: #35594f; }
+a { color: #35594f; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 3px solid #d37770; outline-offset: 5px; }
+.text-label { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; letter-spacing: 2px; }
+.section-green { background: #edf3ee; padding: 1px 0; }
+footer { font-size: 14px; }
+@media (max-width: 540px) {
+  body { font-size: 16px; }
+  h2 { font-size: 25px; }
+  .text-label { font-size: 10px; letter-spacing: 1px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
